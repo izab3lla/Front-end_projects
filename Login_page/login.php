@@ -14,7 +14,7 @@
             <form action="">
                 <h1>Login</h1>
                 <div class= "input-box">
-                    <input type="text" placeholder="Nome de usuário" required>
+                    <input type="text" placeholder="E-mail" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class= "input-box">
@@ -29,17 +29,24 @@
                     <a href="#">Esqueceu a senha?</a>
                 </div>
 
-                <button type="submit" class="botão">Login</button>
+                <button type="submit" class="botao">Login</button>
 
                 <div class="link-registro">
-                    <p>Ainda não possui conta? <a href="#">Registre-se</a></p>
+                    <p>Ainda não possui conta? <a href="">Registre-se</a></p>
+                </div>
+                
+                <div class= "redes">
+                <p>Nos acompanhe nas redes sociais!</p>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-twitch' ></i>
                 </div>
 
             </form>
         </div>
-
-<footer>
-</footer>
+</div> 
 
 </body>
 </html>

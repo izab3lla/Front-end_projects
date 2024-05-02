@@ -5,18 +5,23 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: aqua;
+    background: url('fundo_login.jpeg') no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .one{
-    width: 420px;
-    background: white;
+    width: 450px;
+    background: transparent;
+    box-shadow: 0 0 10px black;
     color: black;
+    padding: 30px 40px;
 }
 
 .one h1{
-   font-size: 36px;
+   font-size: 32px;
    text-align: center; 
+   color: white;
 }
 
 .one .input-box{
@@ -26,10 +31,75 @@ body{
     margin: 15px 0;
 }
 
+.one .lembre-de-mim{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.one .link-registro{
+    font-size: 14px;
+    text-align: end;
+    margin-top: 20px;
+}
+
+.link-registro a{
+    color: white;
+}
+
+.link-registro p{
+    color: white;
+}
+
+.one .botao{
+    width: 25%;
+    height: 30px;
+    background: black;
+    border: 1px solid white;
+    color: white;
+
+}
+
+.lembre-de-mim label input{
+    margin-right: 2px;
+}
+
+.lembre-de-mim a{
+    text-decoration: none;
+    color: white;
+}
+
+.lembre-de-mim label{
+    color: white;
+}
+
 .input-box input{
     background: transparent;
     border: none;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid white;
+    width: 90%;
+    height: 70%;
+    font-size: 14px;
+    padding: 20px 30px 20px 20px;
 }
 
+.input-box i{
+    position: relative;
+    right: 30px;
+    top: 20%;
+    font-size: 20px;
+}
+
+.redes i{
+    position: end;
+    right: 30px;
+    top: 20%;
+    font-size: 30px;
+    color: white;
+}
+
+.redes p{
+    color: white;
+}
