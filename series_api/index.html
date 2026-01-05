@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Series</title>
+</head>
+<body>
+
+    <h1>Lista de Séries</h1>
+
+    <button onclick="carregarSeries()"> Carregar Séries </button>
+
+    <p id="status">Clique no botão para carregar</p>
+
+    <ul id="lista"></ul>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Função chamada ao clicar no botão
+        async function carregarSeries() {
+
+            // Mostra mensagem de carregamento
+            document.getElementById("status").innerText =
+                "Carregando séries...";
+
+            // Busca as séries da API
+            const series = await buscarSeries();
+
+            // Pega a lista
+            const lista = document.getElementById("lista");
+
+            // Limpa a lista
+            lista.innerHTML = "";
+
+            // Mostra só as 10 primeiras séries
+            series.slice(0, 10).forEach(serie => {
+
+                // Cria um item da lista
+                const item = document.createElement("li");
+
+                // Mostra o nome e o idioma da série
+                item.textContent =
+                    serie.name + " - " + serie.language;
+
+                // Adiciona na lista
+                lista.appendChild(item);
+            });
+
+            // Atualiza o status
+            document.getElementById("status").innerText =
+                "Séries carregadas com sucesso!";
+        }
+    </script>
+
+</body>
+</html>
