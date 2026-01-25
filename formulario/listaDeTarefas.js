@@ -4,6 +4,12 @@ const criarTarefa = (evento) => {
     const valor = input.value // obtém o valor digitado no campo de entrada
 
     console.log( valor ) // exibe o valor no console
+
+    const tarefa = document.querySelector('[data-task]') // seleciona a lista de tarefas
+    const conteudo = `<p class="content"> ${valor}</p>` // cria uma string vazia para o conteúdo da nova tarefa
+
+    tarefa.innerHTML = conteudo // define o conteúdo da nova tarefa
+
     input.value = '' // limpa o campo de entrada após adicionar a tarefa
 }
 
