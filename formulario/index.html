@@ -9,18 +9,15 @@
 
     <div class="app">
         <div class="todo-list">
-        <h1 class="title"> Lista de Tarefas</h1>
-        <form class="form" action="">
-            <input class="form-input" type="text" placeholder="Digite uma nova tarefa" data-form-input>
-            <button class="form-button" data-form-button="">Novo Item</button> <!-- o data-form-button é usado para selecionar o botão no JavaScript e separar as responsabilidades -->
-        </form>
+            <h1 class="title"> Lista de Tarefas</h1>
+            <form class="form" action="">
+                <input class="form-input" type="text" placeholder="Digite uma nova tarefa" data-form-input>
+                <button class="form-button" data-form-button="">Novo Item</button> <!-- o data-form-button é usado para selecionar o botão no JavaScript e separar as responsabilidades -->
+            </form>
 
-        <ul class="task-list">
-            <li class="task">
-                <p class="content">Comprar arroz</p>
-            </li>
-        </ul>
-    </div>
+            <ul class="task-list" data-list></ul>
+
+        </div>
     </div>
 <script src="listaDeTarefas.js"></script>
 </body>
