@@ -1,4 +1,8 @@
-(() => { // Evita acesso a regras de negócio fora deste arquivo, como no inspecionar, fazendo o usuario apenas interagir
+//(() => { // Evita acesso a regras de negócio fora deste arquivo, como no inspecionar, fazendo o usuario apenas interagir
+
+import BotaoConclui  from "./componentes/concluiTarefa.js" // importa a função BotaoConclui do arquivo concluiTarefa.js
+import BotaoDeleta  from "./componentes/deletaTarefa.js" // importa a função BotaoDeleta do arquivo deletaTarefa.js
+
     const criarTarefa = (evento) => {
     evento.preventDefault() // previne o comportamento padrão do botão (submissão do formulário)
     
@@ -13,6 +17,7 @@
     tarefa.innerHTML = conteudo // define o conteúdo HTML do novo elemento <li>
     
     tarefa.appendChild(BotaoConclui()) // adiciona o botão de concluir à tarefa
+    tarefa.appendChild(BotaoDeleta()) // adiciona o botão de deletar à tarefa
     lista.appendChild(tarefa) // adiciona o novo elemento <li> à lista de tarefas
     input.value = '' // limpa o campo de entrada após adicionar a tarefa
 }
@@ -22,21 +27,7 @@ const novaTarefa = document.querySelector('[data-form-button]') // seleciona o b
 novaTarefa.addEventListener('click', (evento) => { // adiciona um ouvinte de evento de clique ao botão
     criarTarefa(evento)}) // chama a função criarTarefa quando o botão é clicado
 
-const BotaoConclui = () => {
-    const botaoConclui = document.createElement('button') // cria um novo elemento <button>
+//})(); // IIFE (Immediately Invoked Function Expression) para evitar poluição do escopo global
 
-    botaoConclui.classList.add('check-button') // atribui a classe 'check-button' ao novo botão
-    botaoConclui.innerText = 'Concluir' // define o texto do botão como 'Concluir'
-    botaoConclui.addEventListener('click', concluirTarefa) // adiciona um ouvinte de evento de clique ao botão
-
-    return botaoConclui // retorna o botão criado
-}
-
-const concluirTarefa = (evento) => {
-    const botaoConclui = evento.target // obtém o botão que foi clicado
-
-    const tarefaCompleta = botaoConclui.parentElement // obtém o elemento pai do botão (a tarefa)
-
-    tarefaCompleta.classList.toggle('done') // alterna a classe 'done' na tarefa
-}
-})(); // IIFE (Immediately Invoked Function Expression) para evitar poluição do escopo global
+// CORS é uma sigla para Cross-Origin Resource Sharing (Compartilhamento de Recursos entre Origem Cruzada).
+//é um mecanismo que utiliza cabeçalhos HTTP adicionais para informar aos navegadores que permitam que uma aplicação web rodando em uma origem (domínio) tenha permissão para acessar recursos selecionados de uma origem diferente.
