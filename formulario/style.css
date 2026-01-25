@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3dcf1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container principal */
+.app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caixa da lista */
+.todo-list {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Formulário */
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #bb6b9c;
+}
+
+/* Botão */
+.form-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #641335;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #db91cf;
+}
+
+/* Lista */
+.task-list {
+    list-style: none;
+}
+
+/* Item */
+.task {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Texto da tarefa */
+.content {
+    color: #252525;
+    font-size: 14px;
+}
