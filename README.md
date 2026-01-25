@@ -1,4 +1,4 @@
-# 💻 Projetos Front-end
+# Projetos Front-end
 
 Este repositório reúne projetos desenvolvidos durante meus estudos em **desenvolvimento front-end**, com foco em HTML, CSS e JavaScript.
 Os projetos abordam desde criação de interfaces até lógica de programação e consumo de APIs.
@@ -7,7 +7,7 @@ Os projetos abordam desde criação de interfaces até lógica de programação 
 
 ## 📂 Projetos
 
-### 🔐 Login Page
+### Login Page
 Página de login responsiva com foco em layout e experiência do usuário.  
 **Tecnologias:** 
 - HTML
@@ -16,7 +16,7 @@ Página de login responsiva com foco em layout e experiência do usuário.
 
 ---
 
-### 🛒 E-commerce (Front-end)
+### E-commerce (Front-end)
 Interface de loja virtual desenvolvida para praticar organização visual e layout de e-commerce.  
 **Tecnologias:** 
 - HTML
@@ -25,7 +25,7 @@ Interface de loja virtual desenvolvida para praticar organização visual e layo
 
 ---
 
-### 📝 To-Do List
+### To-Do List
 Aplicação de lista de tarefas com persistência em LocalStorage e foco em usabilidade.  
 **Tecnologias:** 
 - HTML
@@ -34,7 +34,7 @@ Aplicação de lista de tarefas com persistência em LocalStorage e foco em usab
 
 ---
 
-### 📺 Lista de Séries (API)
+### Lista de Séries (API)
 Projeto que consome uma API pública para exibir informações de séries de forma dinâmica.  
 **Tecnologias:** 
 - JavaScript
