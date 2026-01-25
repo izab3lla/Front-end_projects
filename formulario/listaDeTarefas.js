@@ -1,4 +1,5 @@
-const criarTarefa = (evento) => {
+(() => { // Evita acesso a regras de negócio fora deste arquivo, como no inspecionar, fazendo o usuario apenas interagir
+    const criarTarefa = (evento) => {
     evento.preventDefault() // previne o comportamento padrão do botão (submissão do formulário)
     
     const lista = document.querySelector('[data-list]') // seleciona a lista de tarefas
@@ -38,3 +39,4 @@ const concluirTarefa = (evento) => {
 
     tarefaCompleta.classList.toggle('done') // alterna a classe 'done' na tarefa
 }
+})(); // IIFE (Immediately Invoked Function Expression) para evitar poluição do escopo global
