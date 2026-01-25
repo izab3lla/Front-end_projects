@@ -31,3 +31,5 @@ novaTarefa.addEventListener('click', (evento) => { // adiciona um ouvinte de eve
 
 // CORS é uma sigla para Cross-Origin Resource Sharing (Compartilhamento de Recursos entre Origem Cruzada).
 //é um mecanismo que utiliza cabeçalhos HTTP adicionais para informar aos navegadores que permitam que uma aplicação web rodando em uma origem (domínio) tenha permissão para acessar recursos selecionados de uma origem diferente.
+
+//live server é uma extensão do Visual Studio Code que cria um servidor local para hospedar seus arquivos web, permitindo que você visualize e teste suas páginas HTML, CSS e JavaScript em tempo real enquanto desenvolve.
